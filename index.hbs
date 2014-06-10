@@ -1,0 +1,26 @@
+{{!< default}}
+
+<header>
+  <!-- *Update with your image here. Keep dimensions around 200x200px for optimal performance. You don't have to worry about cropping it into a circle, I've taken care of that for you.* -->
+  <img id="avatar" src="{{asset "img/avatar.png"}}">
+</header>
+<main>
+  {{#foreach posts}}
+  <article>
+    <header>
+      <h1><a href="{{url}}">{{{title}}}</a></h1>
+      <h5><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time></h5>
+    </header>
+    <section class="posts">
+      <p>{{excerpt}}&hellip;</p>
+      <h5><a href="{{url}}">Read more <i class="fa fa-caret-right"></i></a></h5>
+    </section>
+<!-- Uncomment this section (and comment out the section with {{excerpt}} ) if you want syntax highlighting on your index page.
+    <section>
+      {{content}}
+    </section>
+-->
+  </article>
+  {{/foreach}}
+  {{pagination}}
+</main>

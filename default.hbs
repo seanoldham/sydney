@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Blog" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="description" content="{{meta_description}}" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{meta_title}}</title>
+    {{#post}}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{{title}}}">
+    <meta name="twitter:description" content="{{excerpt}}">
+    <meta name="twitter:creator" content="@YOUR_TWITTER_HANDLE">
+    <meta name="twitter:image" content="{{@blog.logo}}">
+    <meta name="twitter:url" content="{{url absolute='true'}}">
+    <meta name="twitter:domain" content="{{@blog.url}}">
+    {{/post}}
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href="{{asset "css/main.css"}}" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="{{asset "css/prettify.css"}}" rel="stylesheet"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="{{asset "js/hover.zoom.js"}}"></script>
+    <script src="{{asset "js/hover.zoom.conf.js"}}"></script>
+    {{ghost_head}}
+  </head>
+  <body>
+    {{> header}}
+	<div id="ww">
+	    <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 centered">
+            {{{body}}}
+          </div>
+        </div>
+	    </div>
+	</div>
+  <div id="foot">
+    {{> footer}}
+  </div>
+  {{ghost_foot}}
+  <!--  Add Google Analytics here. -->
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <script src="{{asset "js/bootstrap.min.js"}}"></script>
+  </body>
+</html>
