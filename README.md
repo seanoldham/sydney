@@ -79,3 +79,5 @@ to this:
 ```
 
 by adding your username in place of "YOUR_TWITTER_HANDLE"
+
+Base theme from [Black Tie](http://www.blacktie.co).
