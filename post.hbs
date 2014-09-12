@@ -3,11 +3,11 @@
   <article class="{{post_class}}">
     {{#post}}
     <header>
-      {{#if tags}}<h5>Posted in {{tags}}</h5>{{/if}}
       <h1>{{{title}}}</h1>
       <h5>
         <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time>
       </h5>
+      {{#if tags}}<h5>Posted in {{tags}}</h5>{{/if}}
     </header>
     <section class="posts">
       {{content}}
