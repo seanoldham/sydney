@@ -81,3 +81,7 @@ to this:
 by adding your username in place of "YOUR_TWITTER_HANDLE"
 
 Base theme from [Black Tie](http://www.blacktie.co).
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/seanosaur/sydney/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
