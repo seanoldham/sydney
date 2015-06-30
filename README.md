@@ -2,8 +2,6 @@
 
 A Bootstrap theme for Ghost.
 
-See it in action: http://seanosaur.com.
-
 ![](http://i.imgur.com/66qF6K3.png)
 
 ## Theme Options
