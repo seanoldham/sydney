@@ -1,7 +1,5 @@
 # Sydney
 
-[![seanosaur/sydney](https://repolabels.net/seanosaur/sydney/small.svg)](https://github.com/seanosaur/sydney/)
-
 A Bootstrap theme for Ghost.
 
 ![](http://i.imgur.com/66qF6K3.png)
